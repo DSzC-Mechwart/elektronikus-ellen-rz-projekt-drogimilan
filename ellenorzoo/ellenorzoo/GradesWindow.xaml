@@ -1,0 +1,19 @@
+﻿<Window x:Class="YourNamespace.GradesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Jegybevitel" Height="450" Width="600">
+    <Grid>
+        <StackPanel>
+            <Label Content="Tantárgy:" />
+            <ComboBox Name="comboBoxSubjects" SelectionChanged="comboBoxSubjects_SelectionChanged" />
+            <Label Content="Jegy:" />
+            <TextBox Name="txtGrade" />
+            <Label Content="Téma:" />
+            <TextBox Name="txtTema" />
+            <Label Content="Számonkérés típusa:" />
+            <TextBox Name="txtTipus" />
+            <Button Content="Jegy hozzáadása" Click="btnAddGrade_Click" />
+            <ListBox Name="listBoxGrades" MouseMove="listBoxGrades_MouseMove" />
+        </StackPanel>
+    </Grid>
+</Window>
