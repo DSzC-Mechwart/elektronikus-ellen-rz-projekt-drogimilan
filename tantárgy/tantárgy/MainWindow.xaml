@@ -1,0 +1,34 @@
+﻿<Window x:Class="TantargyApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tantárgy Felvitel" Height="350" Width="400">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Tantárgy neve:" VerticalAlignment="Center"/>
+        <TextBox x:Name="tantargyNevTextBox" Grid.Row="0" Margin="120,0,0,0"/>
+
+        <Label Grid.Row="1" Content="Évfolyam (9-13):" VerticalAlignment="Center"/>
+        <TextBox x:Name="evfolyamTextBox" Grid.Row="1" Margin="120,0,0,0"/>
+
+        <Label Grid.Row="2" Content="Tantárgy típusa:" VerticalAlignment="Center"/>
+        <ComboBox x:Name="tantargyTipusComboBox" Grid.Row="2" Margin="120,0,0,0">
+            <ComboBoxItem Content="közismereti" IsSelected="True"/>
+            <ComboBoxItem Content="szakmai"/>
+        </ComboBox>
+
+        <Label Grid.Row="3" Content="Heti óraszám:" VerticalAlignment="Center"/>
+        <TextBox x:Name="hetiOraszamTextBox" Grid.Row="3" Margin="120,0,0,0"/>
+
+        <Button Grid.Row="4" Content="Mentés" Click="Mentés_Click" HorizontalAlignment="Center" Margin="0,10"/>
+
+        <TextBlock x:Name="messageTextBlock" Grid.Row="5" Foreground="Green" TextAlignment="Center"/>
+    </Grid>
+</Window>
