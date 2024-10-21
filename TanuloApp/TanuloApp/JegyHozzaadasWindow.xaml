@@ -1,0 +1,17 @@
+﻿<Window x:Class="TanuloApp.JegyHozzaadasWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Jegy hozzáadása" Height="300" Width="400">
+    <Grid>
+        <Label Content="Érték:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <TextBox x:Name="ertekTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,10,0,0" Width="200"/>
+
+        <Label Content="Téma:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0"/>
+        <TextBox x:Name="temaTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,50,0,0" Width="200"/>
+
+        <Label Content="Típus:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,90,0,0"/>
+        <TextBox x:Name="tipusTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,90,0,0" Width="200"/>
+
+        <Button Content="Hozzáadás" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,150,0,0" Width="100" Click="Hozzaad_Click"/>
+    </Grid>
+</Window>
