@@ -1,0 +1,3 @@
+Matematika, Évfolyam: 9, Típus: Szakmai, Heti óraszám: 5, Éves óraszám: 180
+Nyelvtan, Évfolyam: 12, Típus: Közismereti, Heti óraszám: 3, Éves óraszám: 93
+Informatika, Évfolyam: 9, Típus: Szakmai, Heti óraszám: 7, Éves óraszám: 252
